@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="image">
+        <img src="profile.png" alt="" class="profile-img" />
+      </div>
+
+      <div class="title">
+        <span class="name">Frech</span>
+        <span class="job">Software Engineer</span>
+      </div>
+
+      <div class="media-buttons">
+        <button
+          id="instagram"
+          style="
+            background: #d6249f;
+            background: radial-gradient(
+              circle at 30% 107%,
+              #fdf497 0%,
+              #fdf497 5%,
+              #fd5949 45%,
+              #d6249f 60%,
+              #285aeb 90%
+            );
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+          "
+          class="link"
+        >
+          <i class="bx bxl-instagram"></i>
+        </button>
+        <button
+          id="github"
+          style="
+            background: #171515;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+          "
+          class="link"
+        >
+          <i class="bx bxl-github"></i>
+        </button>
+        <button
+          id="linkedin"
+          style="
+            background: #0a66c2;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+          "
+          class="link"
+        >
+          <i class="bx bxl-linkedin"></i>
+        </button>
+      </div>
+
+      <!-- This is a container for instagram profile -->
+      <div id="igContainer" class="ig-container">
+        <div class="title">
+          <span class="ig-name">frcchh_</span>
+          <i class="bx bxs-badge-check"></i>
+        </div>
+
+        <div class="ig-profile">
+          <div class="ig-border1">
+            <div class="ig-border2">
+              <img
+                src="ig-profile.png"
+                alt="ig profile"
+                class="ig-profile-img"
+              />
+            </div>
+            <div class="ig-name1">Frech</div>
+          </div>
+
+          <div class="ig-stats">
+            <div class="ig-post">
+              <span>50</span>
+              Posts
+            </div>
+            <div class="ig-followers">
+              <span>153</span>
+              Followers
+            </div>
+            <div class="ig-following">
+              <span>241</span>
+              Following
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- This is a container for a github graph  -->
+      <div id="githubContainer" class="github-container">
+        <div class="months">
+          <span>Jan</span>
+          <span>Feb</span>
+          <span>Mar</span>
+          <span>Apr</span>
+          <span>May</span>
+          <span>Jun</span>
+          <span>Jul</span>
+          <span>...</span>
+        </div>
+
+        <div class="graph">
+          <div class="days">
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+          </div>
+
+          <div class="squares">
+            <div class="week">
+              <div class="square"></div>
+              <div class="square l1"></div>
+              <div class="square l2"></div>
+              <div class="square l3"></div>
+              <div class="square l4"></div>
+              <div class="square l2"></div>
+              <div class="square l1"></div>
+              <div class="square l2"></div>
+              <div class="square l3"></div>
+              <div class="square l1"></div>
+              <div class="square l1"></div>
+              <div class="square"></div>
+              <div class="square l1"></div>
+            </div>
+            <div class="week">
+              <div class="square l1"></div>
+              <div class="square l2"></div>
+              <div class="square l3"></div>
+              <div class="square"></div>
+              <div class="square l1"></div>
+              <div class="square l2"></div>
+              <div class="square"></div>
+              <div class="square l2"></div>
+              <div class="square l3"></div>
+              <div class="square l1"></div>
+              <div class="square l1"></div>
+              <div class="square"></div>
+              <div class="square l1"></div>
+            </div>
+            <div class="week">
+              <div class="square"></div>
+              <div class="square l1"></div>
+              <div class="square"></div>
+              <div class="square l1"></div>
+              <div class="square l2"></div>
+              <div class="square l3"></div>
+              <div class="square l1"></div>
+              <div class="square l2"></div>
+              <div class="square l3"></div>
+              <div class="square l1"></div>
+              <div class="square l1"></div>
+              <div class="square"></div>
+              <div class="square l1"></div>
+            </div>
+            <div class="week">
+              <div class="square"></div>
+              <div class="square l1"></div>
+              <div class="square"></div>
+              <div class="square l1"></div>
+              <div class="square l2"></div>
+              <div class="square l3"></div>
+              <div class="square l1"></div>
+              <div class="square l2"></div>
+              <div class="square l3"></div>
+              <div class="square l1"></div>
+              <div class="square l1"></div>
+              <div class="square"></div>
+              <div class="square l1"></div>
+            </div>
+            <div class="week">
+              <div class="square"></div>
+              <div class="square l1"></div>
+              <div class="square l2"></div>
+              <div class="square l3"></div>
+              <div class="square l4"></div>
+              <div class="square l2"></div>
+              <div class="square l1"></div>
+              <div class="square l2"></div>
+              <div class="square l3"></div>
+              <div class="square l1"></div>
+              <div class="square l1"></div>
+              <div class="square"></div>
+              <div class="square l1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/Frechwarren" class="github-icon">
+            <i class="bx bxl-github">
+              <span class="view-link">view link</span></i
+            >
+          </a>
+        </div>
+
+        <div class="legend">
+          <span class="legend-text">Less</span>
+          <div class="legend-squares">
+            <div class="legend-square" style="background-color: #ebedf0"></div>
+            <div class="legend-square" style="background-color: #9be9a8"></div>
+            <div class="legend-square" style="background-color: #40c463"></div>
+            <div class="legend-square" style="background-color: #30a14e"></div>
+            <div class="legend-square" style="background-color: #216e39"></div>
+          </div>
+          <span class="legend-text">More</span>
+        </div>
+      </div>
+
+      <!-- This is a container for a linkedIn profile  -->
+      <div id="linkedinContainer" class="linkedin-container">
+        <div class="analytics">
+          <div class="impressions">
+            <div class="impression-text">
+              <div class="total">0</div>
+              <div class="text">Post impressions</div>
+              <div class="days">
+                <div class="circle"></div>
+                <span class="percent">0%</span>
+                past 7 days
+              </div>
+            </div>
+          </div>
+          <div class="followers">
+            <div class="followers-text">
+              <div class="total">34</div>
+              <div class="text">Followers</div>
+              <div class="days">
+                <div class="arrow-up">
+                  <i class="bx bxs-up-arrow"></i>
+                </div>
+                <span class="percent">41.7%</span>
+                past 7 days
+              </div>
+            </div>
+          </div>
+          <div class="viewers">
+            <div class="viewers-text">
+              <div class="total">12</div>
+              <div class="text">Post impressions</div>
+              <div class="days">past 90 days</div>
+            </div>
+          </div>
+          <div class="appearance">
+            <div class="appearance-text">
+              <div class="total">6</div>
+              <div class="text">Post impressions</div>
+              <div class="days">Previous week</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="linkedin-link">
+          <a
+            href="https://www.linkedin.com/in/frechwarren"
+            class="linkedin-icon"
+          >
+            <i class="bx bxl-linkedin">
+              <span class="view-link">view link</span>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

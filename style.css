@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.image .profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.profile-card .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  margin-top: -10px;
+}
+
+.title .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.title .job {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.profile-card .media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  :hover {
+    transform: scale(1.1);
+  }
+}
+
+.media-buttons .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  margin: 0 8px;
+  background-color: rgb(55, 155, 63);
+  cursor: pointer;
+  border: none;
+}
+
+.ig-container {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 10px 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.ig-container .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 12px;
+  gap: 2px;
+  margin-top: 3px;
+}
+
+.ig-container .title .ig-name {
+  color: #000000;
+}
+
+.ig-container .title i {
+  color: #1da1f3;
+}
+
+.ig-profile {
+  display: flex;
+  height: 70px;
+}
+
+.ig-border1 {
+  flex-shrink: 0;
+  width: 65px;
+  height: 65px;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 4%,
+    #fdf497 10%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #f01ead 90%
+  );
+  border-radius: 50%;
+}
+
+.ig-border2 {
+  height: 100%;
+  width: 100%;
+  transform: scale(-0.9);
+  background: white;
+  border-radius: 50%;
+}
+
+.ig-profile-img {
+  height: 100%;
+  width: 100%;
+  transform: scale(-0.9);
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.ig-name1 {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ig-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: auto;
+  align-items: center;
+  align-content: center;
+}
+
+.ig-stats .ig-post {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ig-stats .ig-post span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ig-stats .ig-followers {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.ig-stats .ig-followers span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ig-stats .ig-following {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ig-stats .ig-following span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.github-container {
+  display: relative;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.months {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-size: 12px;
+  color: #586069;
+}
+
+.graph {
+  display: flex;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: #586069;
+  margin-right: 5px;
+  text-align: right;
+  height: 120px;
+}
+
+.squares {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 120px;
+  gap: 3px;
+}
+
+.week {
+  display: flex;
+  gap: 3px;
+
+  :hover {
+    transform: scale(1.1);
+  }
+}
+
+.square {
+  width: 15px;
+  height: 15px;
+  background-color: #ebedf0;
+  border-radius: 2px;
+}
+
+.square.l1 {
+  background-color: #9be9a8;
+}
+.square.l2 {
+  background-color: #40c463;
+}
+.square.l3 {
+  background-color: #30a14e;
+}
+.square.l4 {
+  background-color: #216e39;
+}
+
+.legend {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  color: #586069;
+  margin-top: -20px;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-center;
+  background-color: #333;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  margin-top: -20px;
+}
+
+.github-link:hover {
+  width: 70px;
+  border-radius: 50px 20px 20px 50px;
+  transition: 0.2s;
+}
+
+.github-icon {
+  font-size: 14px;
+  margin: 3px 0 1px 1.5px;
+  color: #fffbfb;
+  text-decoration: none;
+}
+
+.view-link {
+  position: absolute;
+  font-size: 10px;
+  color: white;
+  margin: 2px 2px;
+}
+
+.legend-text {
+  margin: 0 10px;
+}
+
+.legend-squares {
+  display: flex;
+  gap: 2px;
+
+  :hover {
+    transform: scale(1.1);
+  }
+}
+
+.legend-square {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.linkedin-container {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 10px 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.analytics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 10px;
+  width: 100%;
+
+  :hover {
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #ebebeb;
+  }
+}
+
+.impressions {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.followers {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.viewers {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.appearance {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.impression-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 5px;
+  padding-top: 5px;
+  color: #586069;
+  pointer-events: none;
+}
+
+.impression-text .total {
+  font-size: 12px;
+  color: #030303;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+.impression-text .text {
+  font-size: 9px;
+  font-weight: 100;
+  margin-top: -5px;
+}
+
+.impression-text .days {
+  display: flex;
+  flex-direction: row;
+  font-size: 7px;
+  font-weight: 100;
+  margin-top: -3px;
+  gap: 2px;
+}
+
+.impression-text .days .percent {
+  color: #216e39;
+  font-weight: 400;
+}
+
+.impression-text .circle {
+  margin: 2.5px 0px;
+  margin-right: -1px;
+  background-color: #216e39;
+  height: 4px;
+  width: 4px;
+  border-radius: 50% 50%;
+}
+
+.followers-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 5px;
+  padding-top: 5px;
+  color: #586069;
+  pointer-events: none;
+}
+
+.followers-text .total {
+  font-size: 12px;
+  color: #030303;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+.followers-text .text {
+  font-size: 9px;
+  font-weight: 100;
+  margin-top: -5px;
+}
+
+.followers-text .days {
+  display: flex;
+  flex-direction: row;
+  font-size: 7px;
+  font-weight: 100;
+  margin-top: -3px;
+  gap: 2px;
+}
+
+.followers-text .days .percent {
+  color: #216e39;
+  font-weight: 400;
+}
+
+.followers-text .arrow-up {
+  font-size: 4.5px;
+  margin: 2px 0px;
+  margin-right: -1px;
+  color: #216e39;
+}
+
+.viewers-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 5px;
+  padding-top: 5px;
+  color: #586069;
+  pointer-events: none;
+}
+
+.viewers-text .total {
+  font-size: 12px;
+  color: #030303;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+.viewers-text .text {
+  font-size: 9px;
+  font-weight: 100;
+  margin-top: -5px;
+}
+
+.viewers-text .days {
+  display: flex;
+  flex-direction: row;
+  font-size: 7px;
+  font-weight: 100;
+  margin-top: -3px;
+  gap: 2px;
+}
+
+.viewers-text .days .percent {
+  color: #216e39;
+  font-weight: 400;
+}
+
+.appearance-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 5px;
+  padding-top: 5px;
+  color: #586069;
+  pointer-events: none;
+}
+
+.appearance-text .total {
+  font-size: 12px;
+  color: #030303;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+.appearance-text .text {
+  font-size: 9px;
+  font-weight: 100;
+  margin-top: -5px;
+}
+
+.appearance-text .days {
+  display: flex;
+  flex-direction: row;
+  font-size: 7px;
+  font-weight: 100;
+  margin-top: -3px;
+  gap: 2px;
+}
+
+.appearance-text .days .percent {
+  color: #216e39;
+  font-weight: 400;
+}
+
+.linkedin-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-center;
+  background-color: #0a66c2;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.linkedin-link:hover {
+  width: 70px;
+  border-radius: 50px 20px 20px 50px;
+  transition: 0.2s;
+}
+
+.linkedin-icon {
+  font-size: 12px;
+  margin: 2px 3px;
+  color: #fffbfb;
+  text-decoration: none;
+}
+
+.linkedin-link .view-link {
+  position: absolute;
+  font-size: 10px;
+  color: white;
+  margin: 2px 2px;
+}
