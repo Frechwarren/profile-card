@@ -2,7 +2,6 @@
 
 A simple and interactive **Profile Card** project built using **HTML**, **CSS**, and **JavaScript**. This project allows users to toggle between different sections (e.g., GitHub, LinkedIn, Instagram) by clicking on buttons.
 
----
 
 ## 🚀 Features
 
@@ -10,7 +9,6 @@ A simple and interactive **Profile Card** project built using **HTML**, **CSS**,
 - **Responsive Design**: The layout is designed to be responsive and user-friendly.
 - **Interactive UI**: Smooth transitions between sections for a better user experience.
 
----
 
 ## 🛠️ Tech Stack
 
@@ -18,11 +16,14 @@ A simple and interactive **Profile Card** project built using **HTML**, **CSS**,
 - ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat)  
 - ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat)
 
----
 
 ## 📂 Project Structure
 
----
+profilecard/
+├── index.html       # Main HTML file for the structure of the profile card
+├── style.css        # CSS file for styling the profile card
+├── index.js         # JavaScript file for interactivity (toggle functionality)
+├── README.md        # Documentation for the project
 
 ## 📖 How It Works
 
@@ -34,7 +35,6 @@ A simple and interactive **Profile Card** project built using **HTML**, **CSS**,
 - Each button (`GitHub`, `LinkedIn`, `Instagram`) is linked to a specific section.
 - Clicking a button toggles the visibility of its corresponding section while hiding others.
 
----
 
 ## 🖥️ How to Run the Project
 
